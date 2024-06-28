@@ -560,141 +560,277 @@ PackagedFood, Breakfast_Sauces and Frozenfood_Icecreams
  ## V. CODE USED
 ##################################################
 #Purchases of Items on Zepto
+
 install.packages('arules')
+
 library(arules)
+
 fp.df <- read.csv(file.choose()) #"Association excel.csv"
+
 fp.df
+
 #remove first column and convert to matrix
+
 fp.mat <- as.matrix(fp.df[, -1]);fp.mat
+
 #convert the binary incidence matrix into a transactions database
+
 Data.tr <- as(fp.mat, "transactions")
+
 inspect(Data.tr)
+
 itemFrequencyPlot(Data.tr)
 
 #Convert the transaction data into matrix data
+
 Data.mat<-as(Data.tr,"matrix");Data.mat
+
 #convert the matrix data into binary matrix
+
 Data.bin<-apply(Data.mat,c(1,2),as.numeric);Data.bin
+
 ##get rules
+
 #when running apriori(), include the minimum support, minimum confidence,
+
 #and target as arguments.
+
 ##########################################
+
 ##requent 1-itemsets
+
 Data.freq1 <- apriori(Data.bin, parameter=list(minlen=1, maxlen=1, support=0.02,
 
+
+
 target="frequent itemsets"))
+
 summary(Data.freq1)
+
+
 inspect(head(sort(Data.freq1, by = "support"), 10))
+
 rules <- apriori(Data.bin, parameter=list(minlen=1,maxlen=1,support=0.02,
+
 confidence=0.01, target = "rules"))
+
 summary(rules)
+
 inspect(rules)
+
 install.packages('arulesViz')
+
 library(arulesViz)
+
 plot(rules)
+
 #Notice that rules are clustered at two places.
+
 #If support >=0.2 and confidence >=0.7 and lift >=1, we will
+
 #consider rules
+
 #Thus, only those clusters at top right corner are considered
+
 plot(rules@quality)
+
 inspect(head(sort(rules, by = "support"), n = 20))
+
 highsupportRules <- head(sort(rules, by="support"), 10)
+
 plot(highsupportRules, method="graph", control=list(type="items"))
+
 highLiftRules <- head(sort(rules, by="lift"), 20)
+
 plot(highLiftRules,control=list(type="items"))
 
+
+
 ##frequent 2-itemsets (we will keep support=0.2)-Notice same results in excel
+
 Data.freq2 <- apriori(Data.bin, parameter=list(minlen=2, maxlen=2, support=0.02,
+
 target="frequent itemsets"))
+
 summary(Data.freq2)
+
 inspect(head(sort(Data.freq2, by = "support"), 10))
 
-###################################
-##frequent 2-itemsets (Rule Generation and Visualization)
-#(we will keep support=0.2 and confidence =0.7)-Notice same results in excel
-rules <- apriori(Data.bin, parameter=list(minlen=2,maxlen=2,support=0.35,
-confidence=0.642, target = "rules"))
-summary(rules)
-inspect(rules)
-install.packages('arulesViz')
-library(arulesViz)
-plot(rules)
-#Notice that rules are clustered at two places.
-#If support >=0.2 and confidence >=0.7 and lift >=1, we will
-#consider rules
-#Thus, only those clusters at top right corner are considered
-plot(rules@quality)
-inspect(head(sort(rules, by = "support"), n = 20))
-highsupportRules <- head(sort(rules, by="support"), 10)
-plot(highsupportRules, method="graph", control=list(type="items"))
-highLiftRules <- head(sort(rules, by="lift"), 20)
-plot(highLiftRules,method="graph",control=list(type="items"))
+
 
 ###################################
-#frequent 3-itemsets
-Data.freq3<- apriori(Data.bin, parameter=list(minlen=3, maxlen=3, support=0.02,
-target="frequent itemsets"))
-inspect(sort(Data.freq3, by ="support"))
-##frequent 3-itemsets (Rule Generation and Visualization)
-#(we will keep support=0.2 and confidence =0.7)
-rules <- apriori(Data.bin, parameter=list(minlen=3,maxlen=3,support=0.2,
-confidence=0.84, target = "rules"))
+
+##frequent 2-itemsets (Rule Generation and Visualization)
+
+#(we will keep support=0.2 and confidence =0.7)-Notice same results in excel
+
+rules <- apriori(Data.bin, parameter=list(minlen=2,maxlen=2,support=0.35,
+
+confidence=0.642, target = "rules"))
+
 summary(rules)
+
 inspect(rules)
+
+install.packages('arulesViz')
+
 library(arulesViz)
-plot(rules,main="scatterplot of 6 rules")
-plot(rules,main="scatterplot of 6 rules",jitter=0)
+
+plot(rules)
+
 #Notice that rules are clustered at two places.
+
 #If support >=0.2 and confidence >=0.7 and lift >=1, we will
+
 #consider rules
-#Thus, only those clusters at top left corner are considered
+
+#Thus, only those clusters at top right corner are considered
+
 plot(rules@quality)
+
 inspect(head(sort(rules, by = "support"), n = 20))
+
 highsupportRules <- head(sort(rules, by="support"), 10)
+
 plot(highsupportRules, method="graph", control=list(type="items"))
+
 highLiftRules <- head(sort(rules, by="lift"), 20)
+
 plot(highLiftRules,method="graph",control=list(type="items"))
+
+
+
+###################################
+
+#frequent 3-itemsets
+
+Data.freq3<- apriori(Data.bin, parameter=list(minlen=3, maxlen=3, support=0.02,
+
+target="frequent itemsets"))
+
+inspect(sort(Data.freq3, by ="support"))
+
+##frequent 3-itemsets (Rule Generation and Visualization)
+
+#(we will keep support=0.2 and confidence =0.7)
+
+rules <- apriori(Data.bin, parameter=list(minlen=3,maxlen=3,support=0.2,
+
+confidence=0.84, target = "rules"))
+
+summary(rules)
+
+inspect(rules)
+
+library(arulesViz)
+
+plot(rules,main="scatterplot of 6 rules")
+
+plot(rules,main="scatterplot of 6 rules",jitter=0)
+
+#Notice that rules are clustered at two places.
+
+#If support >=0.2 and confidence >=0.7 and lift >=1, we will
+
+#consider rules
+
+#Thus, only those clusters at top left corner are considered
+
+plot(rules@quality)
+
+inspect(head(sort(rules, by = "support"), n = 20))
+
+highsupportRules <- head(sort(rules, by="support"), 10)
+
+plot(highsupportRules, method="graph", control=list(type="items"))
+
+highLiftRules <- head(sort(rules, by="lift"), 20)
+
+plot(highLiftRules,method="graph",control=list(type="items"))
+
+
 
 ####################################
+
 #frequent 4-itemsets (no items exist)
+
 Data.freq4 <- apriori(Data.bin, parameter=list(minlen=4, maxlen=4, support=0.02,
+
 target="frequent itemsets"))
+
 inspect(sort(Data.bin, by ="support"))
+
 inspect(head(sort(rules, by = "support"), n = 20))
+
 rules <- apriori(Data.bin, parameter=list(minlen=4,maxlen=4,support=0.15,
+
 confidence=0.9, target = "rules"))
+
 summary(rules)
+
 inspect(rules)
+
 plot(rules,main="scatterplot of 5 rules")
+
 plot(rules,main="scatterplot of 5 rules",jitter=0)
+
 plot(rules@quality)
+
 highsupportRules <- head(sort(rules, by="support"), 10)
+
 plot(highsupportRules, method="graph", control=list(type="items"))
+
 highLiftRules <- head(sort(rules, by="lift"), 20)
+
 plot(highLiftRules,method="graph",control=list(type="items"))
 
+
+
 ################
+
 #if we do not specify the minlen and maxlen, we get all the rules
 
+
+
 rules <- apriori(Data.bin, parameter = list(supp = 0.2, conf = 0.7,
+
 target = "rules"))
+
 #inspect the first ten rules, sorted by their support
+
 inspect(head(sort(rules, by = "support"), n = 10))
+
 highsupportRules <- head(sort(rules, by="support"), 6)
+
 plot(highsupportRules, method="graph", control=list(type="items"))
+
 highLiftRules <- head(sort(rules, by="lift"), 5)
+
 plot(highLiftRules, method="graph", control=list(type="items"))
+
 #select the 5 rules with the highest support
+
 highsupportRules <- head(sort(rules, by="support"), 6)
+
 plot(highsupportRules, method="graph", control=list(type="items"))
+
 #Notice that, size of circles is based on support size. Since the rule
+
 #{ }--> "white" is 0.7 we have bigger circle size.
+
 #Notice the color of circle is based on lift strength.
+
 #greater the lift -->darker the color
+
 #The arrows point towards the rules seen in the output.
+
 #select the 5 rules with the highest lift
+
 highLiftRules <- head(sort(rules, by="lift"), 5)
+
 plot(highLiftRules, method="graph", control=list(type="items"))
+
+
 
 
 
