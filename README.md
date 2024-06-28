@@ -351,6 +351,364 @@ system identify patterns and make relevant product suggestions to customers.
 
 ### 2. Rule Generation using apriori algorithm
 
+#### ONE FREQUENT ITEMSETS OBTAINED
+
+<img width="456" alt="image" src="https://github.com/dhanashreehampiholi/Recommendation-System-for-purchase-at-Zepto/assets/57892263/2b994283-fd66-47c2-8467-683b9812bc21">
+
+The results presented are association rules generated from the Association excel dataset, indicating the relationships between different sets of products. Each
+rule consists of an antecedent (lhs - left-hand side) and a consequent (rhs - right-hand side), along with various metrics such as support, confidence,
+coverage, lift, and count.
+
+##### 1. {Masala_Dryfruits }
+Support: 0.42 (42% of transactions contain Masala_Dryfruits)
+Confidence: 0.42 (42% of transactions that contain {} also Masala_Dryfruits)
+Interpretation: This rule suggests that 42% of transactions involve the purchase of Masala_Dryfruits. The confidence of 42% indicates that when no other product is purchased, there is a chance of 42% that Masala_Dryfruits will be bought. Since the lift is 1.0, there is no significant association between the absence of other products.
+
+##### 2. {Atta_Rice_Dal}
+Support: 0.42 (42% of transactions contain Atta_Rice_Dal)
+Confidence: 0.42 (42% of transactions that contain {} also contain Atta_Rice_Dal)
+Interpretation: This rule says that 42% of transactions involve the purchase of Atta_Rice_Dal. The confidence off 42% interprets that when no other
+product is purchased, there is a chance of 42% that Atta_Rice_Dal will be purchased. Since the lift is 1.0, there is no significant association between the
+absence of other products.
+
+##### 3. {Tea_Coffee }
+Support: 0.46 (46% of transactions contain Tea_Coffee)
+Confidence: 0.46 (46% of transactions that contain {} also contain Tea_Coffee)
+Interpretation: In this rule the support of 46% suggests that 46% of transactions involve the purchase of Tea_Coffee. Followed by confidence of
+46% interprets that when no other product is purchased, there is a chance of 46% that Tea_Coffee will be bought. Since the lift is 1.0, there is no
+significant association between the absence of other products.
+
+##### 4. {Packaged_food }
+Support: 0.48 (48% of transactions contain Packaged_food)
+Confidence: 0.48 (48% of transactions that contain {} also contain Packaged_food)
+Interpretation: This rule says that 48% of transactions involve the purchase of Packaged_food. The confidence off 48% interprets that when no other
+product is purchased, there is a chance of 48% that Packaged_food will be purchased. Since the lift is 1.0, there is no significant association between the
+absence of other products.
+
+##### 5. {Sweets }
+Support: 0.51 (51% of transactions contain Sweets)
+Confidence: 0.51 (51% of transactions that contain {} also contain Sweets)
+Interpretation: : In this rule the support of 51% suggests that 51% of transactions involve the purchase of Sweets. Followed by confidence of 51% interprets that when no other product is purchased, there is a chance of 51% that Sweets will be bought. Since the lift is 1.0, there is no significant association between the absence of other products.
+
+##### 6. {Dairy_bread}
+Support: 0.55 (55% of transactions contain Dairy_bread)
+Confidence: 0.55 (55% of transactions that contain {} also contain Dairy_bread)
+Interpretation: : In this rule the support of 55% suggests that 55% of transactions involve the purchase of Dairy_bread. Followed by confidence of 55% interprets that when no other product is purchased, there is a chance of 55% that Dairy_bread will be bought. Since the lift is 1.0, there is no significant association between the absence of other products.
+
+##### 7. {ColdDrinks_Juice}
+Support: 0.55 (55% of transactions contain ColdDrinks_Juice)
+Confidence: 0.55 (55% of transactions that contain {} also contain ColdDrinks_Juice)
+Interpretation: : In this rule the support of 55% suggests that 55% of transactions involve the purchase of ColdDrinks_Juice. Followed by confidence of 55% interprets that when no other product is purchased, there is a chance of 55% that ColdDrinks_Juice will be bought. Since the lift is 1.0, there is no significant association between the absence of other products.
+
+##### 8. {Biscuits_Cookies}
+Support: 0.57 (57% of transactions contain Biscuits_Cookies)
+Confidence: 0.57 (57% of transactions that contain {} also contain Biscuits_Cookies)
+Interpretation: : In this rule the support of 57% suggests that 57% of transactions involve the purchase of Biscuits_Cookies. Followed by confidence of 57% interprets that when no other product is purchased, there is a chance of 57% that Biscuits_Cookies will be bought. Since the lift is 1.0, there is no significant association between the absence of other products.
+
+##### 9. {Breakfast_Sauces}
+Support: 0.59 (59% of transactions contain Breakfast_Sauces)
+Confidence: 0.59 (59% of transactions that contain {} also contain Breakfast_Sauces)
+Interpretation: : In this rule the support of 59% suggests that 59% of transactions involve the purchase of Breakfast_Sauces. Followed by
+confidence of 59% interprets that when no other product is purchased, there is a chance of 59% that Breakfast_Sauces will be bought. Since the lift is 1.0,
+there is no significant association between the absence of other products.
+
+##### 10.{FrozenFood and Icecream}
+Support: 0.61 (61% of transactions contain FrozenFood and Icecream)
+Confidence: 0.61 (61% of transactions that contain {} also contain FrozenFood and Icecream)
+Interpretation: : In this rule the support of 61% suggests that 61% of transactions involve the purchase of FrozenFood and Icecream. Followed
+by confidence of 61% interprets that when no other product is purchased, there is a chance of 61% that FrozenFood and Icecream will be bought. Since the lift is 1.0, there is no significant association between the absence of other products.
+
+##### 11.{Munchies_Chips}
+Support: 0.61 (61% of transactions contain Munchies_Chips)
+Confidence: 0.61 (61% of transactions that contain {} also contain Munchies_Chips)
+Interpretation: : In this rule the support of 61% suggests that 61% of transactions involve the purchase of Munchies_Chips. Followed by confidence of 61% interprets that when no other product is purchased, there is a chance of 61% that Munchies_Chips will be bought. Since the lift is 1.0, there is no significant association between the absence of other products.
+
+##### 12.{Others}
+Support: 0.53 (53% of transactions contain Munchies_Chips)
+Confidence: 0.53 (53% of transactions that contain {} also contain Munchies_Chips)
+Interpretation: : In this rule the support of 53% suggests that 53% of transactions involve the purchase of Munchies_Chips. Followed by confidence of 53% interprets that when no other product is purchased, there is a chance of 53% that Munchies_Chips will be bought. Since the lift is 1.0, there is no significant association between the absence of other products.
+
+These rules suggest strong associations between the empty set and each individual product category, indicating that these products are commonly purchased alone.
+
+<img width="409" alt="image" src="https://github.com/dhanashreehampiholi/Recommendation-System-for-purchase-at-Zepto/assets/57892263/9a04ee66-adc5-49c5-ac15-6575e4069684">
+
+<img width="404" alt="image" src="https://github.com/dhanashreehampiholi/Recommendation-System-for-purchase-at-Zepto/assets/57892263/81eb8ca5-432c-4eab-a6c1-4d8b97906d09">
+
+This is a pair plot which again gives a visual representation using parameters like support, Confidence, Coverage, Lift and Count.
+
+<img width="399" alt="image" src="https://github.com/dhanashreehampiholi/Recommendation-System-for-purchase-at-Zepto/assets/57892263/617e21bc-5065-4e1b-bc36-41fe250da8fc">
+
+Interpretation: the scatter plot, gives a visual representation of the generated rules plotted by support against the confidence . By considering the cutoff level of 0.02 for support and 0.01 for confidence and a lift of 1 we filter only few rules of 1 frequent itemsets to take into consideration.
+
+<img width="370" alt="image" src="https://github.com/dhanashreehampiholi/Recommendation-System-for-purchase-at-Zepto/assets/57892263/d6801866-c42b-4883-a0fe-461059b2745c">
+
+#### TWO FREQUENT ITEMSETS OBTAINED
+
+<img width="440" alt="image" src="https://github.com/dhanashreehampiholi/Recommendation-System-for-purchase-at-Zepto/assets/57892263/179b03ba-31ec-452e-8b4a-10e1ecc90002">
+
+#### INTERPRETATION
+The association rules mined from the dataset reveal interesting patterns in customer purchasing behavior within Zepto's product categories:
+ Customers who purchase Packaged Food are likely to also purchase Frozen Food and Ice Cream. This association has a high confidence of 0.75, indicating strong support
+for the rule.
+ Cold Drinks and Juice buyers are highly inclined to purchase Munchies Chips as well, with a confidence of 0.7777 and support of 0.4285.
+ Munchies Chips purchasers often accompany their purchase with Cold Drinks and Juice, with a similar confidence of 0.7.
+ Customers who buy items categorized as Others are often interested in Biscuits and Cookies, with a confidence of 0.6923.
+ Biscuits and Cookies buyers also tend to purchase Others, supporting the notion that these items are commonly bought together, with a confidence of 0.6429.
+There is a significant association between Others and Breakfast Sauces, indicating a potential cross-category buying behavior, with a confidence of 0.7692.
+ The reciprocal relationship holds, with Breakfast Sauces buyers likely to purchase Others as well, albeit with slightly lower confidence.
+ Biscuits and Cookies purchasers show an inclination towards Frozen Food and Ice Cream as well as Munchies Chips, with confidence levels of 0.6429 each.
+ Breakfast Sauces buyers exhibit a preference for Frozen Food and Ice Cream, suggesting a trend of purchasing condiments alongside frozen treats.
+
+Thus, looking at all the 4 parameters, we can conclude that, rule 2,3,6, and 7 are appropriate for implementation purpose. Thus, the shop owner can give discount
+for customers purchasing the above combinations i.e ColdDrinks_Juice, Munchies_Chips, Breakfast_Sauces and Others.
+
+<img width="323" alt="image" src="https://github.com/dhanashreehampiholi/Recommendation-System-for-purchase-at-Zepto/assets/57892263/c3bf2fca-5913-4390-98d4-fa47587dcb7b">
+
+From the above scatter plot we can see that all the rules have a support below 42%, where confidence is 77% and below.
+
+<img width="288" alt="image" src="https://github.com/dhanashreehampiholi/Recommendation-System-for-purchase-at-Zepto/assets/57892263/9982d90d-f351-402a-a516-8a6e2845d9ef">
+
+<img width="286" alt="image" src="https://github.com/dhanashreehampiholi/Recommendation-System-for-purchase-at-Zepto/assets/57892263/3f8ceeda-06ea-4970-920a-f6dbbbc4729e">
+
+#### THREE FREQUENT ITEMSETS
+
+<img width="458" alt="image" src="https://github.com/dhanashreehampiholi/Recommendation-System-for-purchase-at-Zepto/assets/57892263/d0eb406c-3c4f-44e2-ad2d-a655ce23d137">
+
+##### INTERPRETATION
+The association rules extracted from the dataset provide deeper insights into the relationships between multiple items and their impact on customer purchasing behavior within Zepto's product categories:
+
+ Customers who purchase Packaged Food and Others together are highly likely to also purchase Frozen Food and Ice Cream. This association rule has a high
+confidence of 0.8462, indicating strong support for the rule.
+ Customers who buy Packaged Food alongside Breakfast Sauces have a high probability of purchasing Frozen Food and Ice Cream as well, with a confidence
+of 0.9231.
+ For customers purchasing Sweets and Cold Drinks or Juice together, there's a strong likelihood of also buying Munchies Chips, supported by a confidence of
+0.8462.
+ Customers who purchase Sweets and Others together are inclined to add Breakfast Sauces to their cart as well, with a confidence of 0.8571.
+ The association between Cold Drinks or Juice and Others also extends to Munchies Chips, with a confidence of 0.8462, indicating a consistent buying
+pattern across these items.
+ Customers purchasing Cold Drinks or Juice alongside Breakfast Sauces are highly likely to also purchase Munchies Chips, with a confidence of 0.8750.
+
+These association rules highlight the interplay between different product categories and can inform Zepto's marketing strategies, product bundling, and recommendation system to enhance customer engagement and satisfaction while driving sales.
+
+Thus, looking at all the 4 parameters, we can conclude that, rule 2,3 are appropriate for implementation purpose. Thus, the shop owner can give discount for customers purchasing the above combinations of screen protector and phone insurance and Memory card.
+
+<img width="412" alt="image" src="https://github.com/dhanashreehampiholi/Recommendation-System-for-purchase-at-Zepto/assets/57892263/d78f83a0-fd85-4d77-b905-1a1016cf55f2">
+
+In the above scatter plot we can see that the support for all the rules is very less which is 28% and below where as confidence is high which is 93% and below.
+
+<img width="367" alt="image" src="https://github.com/dhanashreehampiholi/Recommendation-System-for-purchase-at-Zepto/assets/57892263/2db24df7-d4b3-47d5-bf76-4c67f4f00270">
+
+<img width="375" alt="image" src="https://github.com/dhanashreehampiholi/Recommendation-System-for-purchase-at-Zepto/assets/57892263/404ef00f-1229-4aef-aedb-b3fa5648bc13">
+
+#### 4-FREQUENT ITEMSETS OBTAINED
+
+<img width="468" alt="image" src="https://github.com/dhanashreehampiholi/Recommendation-System-for-purchase-at-Zepto/assets/57892263/fb52200a-9765-4653-b9bc-def3ed92f6b6">
+
+The association rules mined from the dataset continue to reveal interesting patterns in customer purchasing behavior within Zepto's product categories, with some
+combinations showing strong associations:
+
+Transactions where customers purchase Packaged Food, Dairy Bread, and Breakfast Sauces together are highly likely to also include Frozen Food and
+Ice Cream, with a confidence of 1.0. This indicates a consistent buying pattern among these items.
+
+ Similarly, customers who buy Packaged Food, Biscuits and Cookies, and Others together are inclined to also purchase Frozen Food and Ice Cream, with a high confidence of 0.9.
+
+ Transactions involving Packaged Food, Breakfast Sauces, and Others also show a strong association with Frozen Food and Ice Cream, supported by a confidence of 1.0.
+
+ For customers purchasing Sweets, Cold Drinks or Juice, and Breakfast Sauces together, there's a high likelihood of also purchasing Munchies Chips, with a confidence of 1.0.
+
+ Additionally, transactions where Cold Drinks or Juice, Breakfast Sauces, and Others are bought together also exhibit an association with Munchies
+Chips, albeit with a slightly lower confidence of 0.9.
+
+Thus, looking at all the 4 parameters, we can conclude that, rule 3 is the most appropriate for implementation purpose. Thus, the shop owner can give discount
+for customers purchasing the above combination of Packaged_food, Breakfast_Sauces and Others.
+
+<img width="406" alt="image" src="https://github.com/dhanashreehampiholi/Recommendation-System-for-purchase-at-Zepto/assets/57892263/b0a6273a-18d3-48ef-be8d-7a2fcca27194">
+
+<img width="357" alt="image" src="https://github.com/dhanashreehampiholi/Recommendation-System-for-purchase-at-Zepto/assets/57892263/c5441ca2-a09c-4d1b-8841-d762b758fc12">
+
+### 3. Assessing the strength of the rules obtained
+
+To assess the strengths of the rules obtained, we can consider several aspects:
+Support: The support value indicates how frequently a rule occurs in the dataset. Higher support values suggest that the rule is applicable to a larger portion of transactions.
+Confidence: Confidence measures the reliability of the rule. A high confidence value indicates that the consequent (rhs) is likely to be true when the antecedent
+(lhs) is true.
+Lift: Lift compares the likelihood of the consequent under the conditions of the rule to the likelihood of the consequent without regard to the antecedent. A lift
+value greater than 1 indicates that the rule has a positive effect on the likelihood of the consequent.
+Coverage: Coverage measures the proportion of instances in the dataset that are covered by the rule. Higher coverage values indicate that the rule applies to a larger portion of the dataset.
+
+## IV. CONCLUSION
+#### Recommendation from the analysis
+From the above analysis we can interpret that there are several combinations of products where the Zepto store can provide discounts and offers .The combinations
+include
+
+ 1-frequent itemset
+Munchies_Chips
+FrozenFood_Icecreams
+
+ 2-frequent itemset
+PackagedFood and Icecream
+Munchies_Chips and Cold drinks
+
+
+ 3-frequent itemsets
+PackagedFood, Breakfast_Sauces and Frozenfood_Icecreams
+
+ 4-frequent itemsets
+ PackagedFood, Breakfast_Sauces , Frozenfood_Icecreams and Dairy bread
+
+
+ ## V. CODE USED
+##################################################
+#Purchases of Items on Zepto
+install.packages('arules')
+library(arules)
+fp.df <- read.csv(file.choose()) #"Association excel.csv"
+fp.df
+#remove first column and convert to matrix
+fp.mat <- as.matrix(fp.df[, -1]);fp.mat
+#convert the binary incidence matrix into a transactions database
+Data.tr <- as(fp.mat, "transactions")
+inspect(Data.tr)
+itemFrequencyPlot(Data.tr)
+
+#Convert the transaction data into matrix data
+Data.mat<-as(Data.tr,"matrix");Data.mat
+#convert the matrix data into binary matrix
+Data.bin<-apply(Data.mat,c(1,2),as.numeric);Data.bin
+##get rules
+#when running apriori(), include the minimum support, minimum confidence,
+#and target as arguments.
+##########################################
+##requent 1-itemsets
+Data.freq1 <- apriori(Data.bin, parameter=list(minlen=1, maxlen=1, support=0.02,
+
+target="frequent itemsets"))
+summary(Data.freq1)
+inspect(head(sort(Data.freq1, by = "support"), 10))
+rules <- apriori(Data.bin, parameter=list(minlen=1,maxlen=1,support=0.02,
+confidence=0.01, target = "rules"))
+summary(rules)
+inspect(rules)
+install.packages('arulesViz')
+library(arulesViz)
+plot(rules)
+#Notice that rules are clustered at two places.
+#If support >=0.2 and confidence >=0.7 and lift >=1, we will
+#consider rules
+#Thus, only those clusters at top right corner are considered
+plot(rules@quality)
+inspect(head(sort(rules, by = "support"), n = 20))
+highsupportRules <- head(sort(rules, by="support"), 10)
+plot(highsupportRules, method="graph", control=list(type="items"))
+highLiftRules <- head(sort(rules, by="lift"), 20)
+plot(highLiftRules,control=list(type="items"))
+
+##frequent 2-itemsets (we will keep support=0.2)-Notice same results in excel
+Data.freq2 <- apriori(Data.bin, parameter=list(minlen=2, maxlen=2, support=0.02,
+target="frequent itemsets"))
+summary(Data.freq2)
+inspect(head(sort(Data.freq2, by = "support"), 10))
+
+###################################
+##frequent 2-itemsets (Rule Generation and Visualization)
+#(we will keep support=0.2 and confidence =0.7)-Notice same results in excel
+rules <- apriori(Data.bin, parameter=list(minlen=2,maxlen=2,support=0.35,
+confidence=0.642, target = "rules"))
+summary(rules)
+inspect(rules)
+install.packages('arulesViz')
+library(arulesViz)
+plot(rules)
+#Notice that rules are clustered at two places.
+#If support >=0.2 and confidence >=0.7 and lift >=1, we will
+#consider rules
+#Thus, only those clusters at top right corner are considered
+plot(rules@quality)
+inspect(head(sort(rules, by = "support"), n = 20))
+highsupportRules <- head(sort(rules, by="support"), 10)
+plot(highsupportRules, method="graph", control=list(type="items"))
+highLiftRules <- head(sort(rules, by="lift"), 20)
+plot(highLiftRules,method="graph",control=list(type="items"))
+
+###################################
+#frequent 3-itemsets
+Data.freq3<- apriori(Data.bin, parameter=list(minlen=3, maxlen=3, support=0.02,
+target="frequent itemsets"))
+inspect(sort(Data.freq3, by ="support"))
+##frequent 3-itemsets (Rule Generation and Visualization)
+#(we will keep support=0.2 and confidence =0.7)
+rules <- apriori(Data.bin, parameter=list(minlen=3,maxlen=3,support=0.2,
+confidence=0.84, target = "rules"))
+summary(rules)
+inspect(rules)
+library(arulesViz)
+plot(rules,main="scatterplot of 6 rules")
+plot(rules,main="scatterplot of 6 rules",jitter=0)
+#Notice that rules are clustered at two places.
+#If support >=0.2 and confidence >=0.7 and lift >=1, we will
+#consider rules
+#Thus, only those clusters at top left corner are considered
+plot(rules@quality)
+inspect(head(sort(rules, by = "support"), n = 20))
+highsupportRules <- head(sort(rules, by="support"), 10)
+plot(highsupportRules, method="graph", control=list(type="items"))
+highLiftRules <- head(sort(rules, by="lift"), 20)
+plot(highLiftRules,method="graph",control=list(type="items"))
+
+####################################
+#frequent 4-itemsets (no items exist)
+Data.freq4 <- apriori(Data.bin, parameter=list(minlen=4, maxlen=4, support=0.02,
+target="frequent itemsets"))
+inspect(sort(Data.bin, by ="support"))
+inspect(head(sort(rules, by = "support"), n = 20))
+rules <- apriori(Data.bin, parameter=list(minlen=4,maxlen=4,support=0.15,
+confidence=0.9, target = "rules"))
+summary(rules)
+inspect(rules)
+plot(rules,main="scatterplot of 5 rules")
+plot(rules,main="scatterplot of 5 rules",jitter=0)
+plot(rules@quality)
+highsupportRules <- head(sort(rules, by="support"), 10)
+plot(highsupportRules, method="graph", control=list(type="items"))
+highLiftRules <- head(sort(rules, by="lift"), 20)
+plot(highLiftRules,method="graph",control=list(type="items"))
+
+################
+#if we do not specify the minlen and maxlen, we get all the rules
+
+rules <- apriori(Data.bin, parameter = list(supp = 0.2, conf = 0.7,
+target = "rules"))
+#inspect the first ten rules, sorted by their support
+inspect(head(sort(rules, by = "support"), n = 10))
+highsupportRules <- head(sort(rules, by="support"), 6)
+plot(highsupportRules, method="graph", control=list(type="items"))
+highLiftRules <- head(sort(rules, by="lift"), 5)
+plot(highLiftRules, method="graph", control=list(type="items"))
+#select the 5 rules with the highest support
+highsupportRules <- head(sort(rules, by="support"), 6)
+plot(highsupportRules, method="graph", control=list(type="items"))
+#Notice that, size of circles is based on support size. Since the rule
+#{ }--> "white" is 0.7 we have bigger circle size.
+#Notice the color of circle is based on lift strength.
+#greater the lift -->darker the color
+#The arrows point towards the rules seen in the output.
+#select the 5 rules with the highest lift
+highLiftRules <- head(sort(rules, by="lift"), 5)
+plot(highLiftRules, method="graph", control=list(type="items"))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
