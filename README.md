@@ -288,11 +288,11 @@ fp.df <- read.csv(file.choose()) #"Association excel.csv"
 
 fp.df
 
-# remove first column and convert to matrix
+#remove first column and convert to matrix
 
 fp.mat <- as.matrix(fp.df[, -1]);fp.mat
 
-# convert the binary incidence matrix into a transactions database
+#convert the binary incidence matrix into a transactions database
 
 Data.tr <- as(fp.mat, "transactions")
 
